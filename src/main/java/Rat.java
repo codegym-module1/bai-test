@@ -1,4 +1,4 @@
-public class Rat {
+public class Rat extends Animals{
     private String name;
     private int weight;
     private int speed;
@@ -31,5 +31,10 @@ public class Rat {
     @Override
     public String toString() {
         return "Rat {Name "+ getName()+". Speed "+getSpeed()+". Weight "+getWeight()+"}";
+    }
+
+    @Override
+    public String makeSould() {
+        return "Chit chit";
     }
 }
