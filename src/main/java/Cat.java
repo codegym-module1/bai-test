@@ -19,8 +19,14 @@ public class Cat {
     }
 
     public void run() {
-
+        System.out.println("Mèo đang chạy với tốc độ " + speed);
     }
 
-
+    public boolean catchRat(Rat rat) {
+        if (rat.getSpeed() == getSpeed()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
