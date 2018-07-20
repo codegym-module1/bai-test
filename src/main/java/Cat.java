@@ -1,4 +1,4 @@
-public class Cat {
+public class Cat extends Animals{
     private String name;
     private int speed;
 
@@ -38,5 +38,10 @@ public class Cat {
         } else {
             System.out.println("Meo meo, đói");
         }
+    }
+
+    @Override
+    public String makeSould() {
+        return "Meo meo";
     }
 }
