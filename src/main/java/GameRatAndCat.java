@@ -20,6 +20,7 @@ public class GameRatAndCat {
         cats[3] = "Mick";
         cats[4] = "Seven";
         printArray(cats);
+
         System.out.println();
         String[] rats = new String[5];
         rats[0] = "Dy";
@@ -37,11 +38,4 @@ public class GameRatAndCat {
         }
     }
 
-    public static void search(String[] array, String k) {
-        for (int i = 0; i < array.length; i++) {
-            if (k == array[i]) {
-                System.out.println();
-            }
-        }
-    }
 }
