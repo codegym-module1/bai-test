@@ -25,7 +25,7 @@ public class Rat {
     }
 
     public void run() {
-
+        System.out.println("Chuột đang chạy với tốc độ "+speed);
     }
 
     @Override
