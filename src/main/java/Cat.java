@@ -18,7 +18,7 @@ public class Cat {
         return speed;
     }
 
-    public void run() {
+    public void run(Cat cat) {
         System.out.println("Mèo đang chạy với tốc độ " + speed);
     }
 
@@ -27,6 +27,16 @@ public class Cat {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public void eat(Rat rat) {
+        if (rat.getWeight() < 10) {
+            System.out.println("Mum mum, chuột hơi gầy");
+        } else if (rat.getWeight() > 10) {
+            System.out.println("Mum mum, chuột béo đấy");
+        } else {
+            System.out.println("Meo meo, đói");
         }
     }
 }
