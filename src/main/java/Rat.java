@@ -1,4 +1,4 @@
-public class Rat extends Animals{
+public class Rat extends Animals implements CanRun, CanFly, CanSwim {
     private String name;
     private int weight;
     private int speed;
@@ -25,16 +25,31 @@ public class Rat extends Animals{
     }
 
     public void run(Rat rat) {
-        System.out.println("Chuột đang chạy với tốc độ "+speed);
+        System.out.println("Chuột đang chạy với tốc độ " + speed);
     }
 
     @Override
     public String toString() {
-        return "Rat {Name "+ getName()+". Speed "+getSpeed()+". Weight "+getWeight()+"}";
+        return "Rat {Name " + getName() + ". Speed " + getSpeed() + ". Weight " + getWeight() + "}";
     }
 
     @Override
     public String makeSould() {
         return "Chit chit";
+    }
+
+    @Override
+    public boolean run() {
+        return true;
+    }
+
+    @Override
+    public boolean fly() {
+        return false;
+    }
+
+    @Override
+    public boolean swim() {
+        return true;
     }
 }

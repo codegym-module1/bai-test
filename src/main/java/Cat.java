@@ -1,4 +1,4 @@
-public class Cat extends Animals{
+public class Cat extends Animals implements CanRun, CanFly, CanSwim {
     private String name;
     private int speed;
 
@@ -43,5 +43,20 @@ public class Cat extends Animals{
     @Override
     public String makeSould() {
         return "Meo meo";
+    }
+
+    @Override
+    public boolean fly() {
+        return false;
+    }
+
+    @Override
+    public boolean run() {
+        return true;
+    }
+
+    @Override
+    public boolean swim() {
+        return true;
     }
 }
