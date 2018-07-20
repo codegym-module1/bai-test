@@ -24,7 +24,7 @@ public class Rat {
         return speed;
     }
 
-    public void run() {
+    public void run(Rat rat) {
         System.out.println("Chuột đang chạy với tốc độ "+speed);
     }
 
